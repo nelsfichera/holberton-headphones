@@ -14,9 +14,9 @@ No Javascript may be used, nor any CSS framework such as Bootstrap.
 # The design
 ## Desktop
 <img src = 'final-screens/01_headphones_desktop@2x.png' alt="wire frames for desktop">
-## Tablet
+<h2> Tablet </h2>
 <img src = 'final-screens/01_headphones_tablet@2x.png' alt='wire frames for tablet'>
-## Mobile
+<h2>Mobile </h2>
 <img src = 'final-screens/01_headphones_mobile@2x.png' alt='wire frames for mobile'>
  
 
