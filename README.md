@@ -14,7 +14,7 @@ No Javascript may be used, nor any CSS framework such as Bootstrap.
 # The design
 <img src = 'final-screens/01_headphones_desktop@2x.png' alt="wire frames for desktop">
 <img src = 'final-screens/01_headphones_tablet@2x.png' alt='wire frames for tablet'>
-<img src = 'final-screens/01_headphones_mobile@2x' alt='wire frames for mobile'>
+<img src = 'final-screens/01_headphones_mobile@2x.png' alt='wire frames for mobile'>
  
 
 Project will be manually reviewed by another Holberton web stack student after completion. 
