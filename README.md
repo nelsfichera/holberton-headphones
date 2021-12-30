@@ -10,4 +10,11 @@ No Javascript may be used, nor any CSS framework such as Bootstrap.
 ## Animations may be added to "What we do..." and "Our results" sections
 ## A final SASS version of the CSS may be produced when CSS has been fully generated. 
 
+# The design
+<object data="https://github.com/nelsfichera/holberton-headphones/blob/c4f7b6b0aa1a4f27ee788de3d4b13da628e1ff4e/Holberton%20School%20-%20Headphone%20company%20(Copy).pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/nelsfichera/holberton-headphones/blob/c4f7b6b0aa1a4f27ee788de3d4b13da628e1ff4e/Holberton%20School%20-%20Headphone%20company%20(Copy).pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/nelsfichera/holberton-headphones/blob/c4f7b6b0aa1a4f27ee788de3d4b13da628e1ff4e/Holberton%20School%20-%20Headphone%20company%20(Copy).pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 Project will be manually reviewed by another Holberton web stack student after completion. 
