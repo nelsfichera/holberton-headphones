@@ -12,10 +12,9 @@ No Javascript may be used, nor any CSS framework such as Bootstrap.
 <ul> 
 
 # The design
-<object data="https://github.com/nelsfichera/holberton-headphones/blob/c4f7b6b0aa1a4f27ee788de3d4b13da628e1ff4e/Holberton%20School%20-%20Headphone%20company%20(Copy).pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/nelsfichera/holberton-headphones/blob/c4f7b6b0aa1a4f27ee788de3d4b13da628e1ff4e/Holberton%20School%20-%20Headphone%20company%20(Copy).pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/nelsfichera/holberton-headphones/blob/c4f7b6b0aa1a4f27ee788de3d4b13da628e1ff4e/Holberton%20School%20-%20Headphone%20company%20(Copy).pdfgot">Download PDF</a>.</p>
-    </embed>
-</object>
+<img src = 'final-screens/01_headphones_desktop@2x.png' alt="wire frames for desktop">
+<img src = 'final-screens/01_headphones_tablet@2x.png' alt='wire frames for tablet'>
+<img src = 'final-screens/01_headphones_mobile@2x' alt='wire frames for mobile'>
+ 
 
 Project will be manually reviewed by another Holberton web stack student after completion. 
