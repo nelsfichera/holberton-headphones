@@ -12,8 +12,11 @@ No Javascript may be used, nor any CSS framework such as Bootstrap.
 <ul> 
 
 # The design
+## Desktop
 <img src = 'final-screens/01_headphones_desktop@2x.png' alt="wire frames for desktop">
+## Tablet
 <img src = 'final-screens/01_headphones_tablet@2x.png' alt='wire frames for tablet'>
+## Mobile
 <img src = 'final-screens/01_headphones_mobile@2x.png' alt='wire frames for mobile'>
  
 
