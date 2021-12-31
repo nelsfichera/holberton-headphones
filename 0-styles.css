@@ -1,0 +1,265 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #ff6565;
+    --links-hover-active: var(--color-red);
+    --button-hover-active: rgba(var(--color-red));
+    --content-max-width: 1000px;
+
+    --font-size-small: 12px;
+    --font-size-med: 16px;
+    --font-size-lrg: 32px;
+    --font-size-x-lrg: 42px;
+    --line-height-base: 1.15;
+    --font-size-button: 14px;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Spin-Cycle-OT';
+    src: url('./fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+    src: local('./fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sans Source Pro Regular';
+    font-weight: regular;
+    src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    src: local('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sans Source Pro Bold';
+    font-weight: bold;
+    src:url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    src:local('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: var(--font-size-small);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+header {
+    padding: .25em;
+    position: absolute;
+    font-family: 'Sans Source Pro', sans-serif;
+    font-weight: bold;
+    width: 100vw;
+    height: 90vh;
+    background-image: url('images/headphones_hero_1.jpg');
+    /* background-image: url('images/headphones_hero_1.jpg,'), radial-gradient(--color-black, --color-white); */
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .header-nav-container {
+     position: absolute;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width: 100vw;
+     align-content: center;
+     margin: 2.5em .5em;
+     align-items: center;
+ }
+
+ .header-secondary-container {
+     text-align: center;
+     align-items: center;
+     width: 100vw;
+     height: 40vh;
+     padding-top: 30vh;
+     line-height: var(--line-height-base);
+     font-family: 'Sans Source Pro Regular', Arial, Helvetica, sans-serif;
+ }
+
+.header-secondary-container h1 {
+    font-family: 'Sans Source Pro Bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:var(--font-size-lrg);
+    padding-top: 10vh;
+}
+
+.heaader-secondary-container h3 {
+    font-family: 'Sans Source Pro Bold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: var(--font-size-med);
+}
+
+.header-secondary-container p {
+    font-family: 'Sans Source Pro Regular', Arial, Helvetica, sans-serif;
+    font-weight: regular;
+    font-size: var(--font-size-med);
+    width: 100%;
+    margin: 5vh 5vw;
+    padding-right: 10vw;
+}
+ .logo-container {
+     width: 30vw;
+     margin: .15em;
+ }
+
+ .logo {
+     width: 13em;
+     height: 2.5em;
+     background-image: url('./images/logo_headphones.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+ }
+
+ nav .nav-menu {
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     align-items: flex-end;
+ }
+
+ ul.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 2px;
+    justify-content: right;
+    
+}
+
+li.nav-item a{
+    text-decoration: none;
+    margin: 15px;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+    color: var(--color-white);
+    font-size: 12px;
+}
+
+li.nav-item a:active, li.nav-item a:hover {
+    color: var(--color-red);
+}
+
+
+label.burger-check {
+    line-height: var(--line-height-base);
+    align-self: flex-end;
+    margin: .15em;
+    display: none;
+
+}
+
+input.burger-check {
+    display: none;
+}
+
+ .burger-menu-line {
+    height: 0.15rem;
+    width: 1.5em;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: .15rem;
+    transition: .1s;
+    margin: 5px;
+
+  }
+.burger-menu-line:nth-of-type(2) {
+    width: 1em;
+    height: 0.15em;
+}
+
+button {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    font-family: 'Sans Source Pro', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-base);
+    text-align: center;
+    border: 0px solid transparent;
+    filter: drop-shadow(0px 2px 20px rgba(0,0,0,0.5));
+    border-radius: 5em;
+    margin-top: 5vh;
+    padding: 2vh 2vw;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 480px) {
+    .header-nav-container{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .burger-menu-line {
+        display: relative;
+        margin-left: 10vw;
+    }
+
+    .logo-container{
+        margin-right: 50vw;
+        padding-left: 5vw;
+        position: sticky;
+    }
+    
+    .logo {
+        align-self: center;
+    }
+
+    label.burger-check {
+        display: inline-block;
+    }
+
+    input.burger-check:checked + label.burger-check > .burger-menu-line  {
+        transform: rotate(50deg);
+        transform-origin: left;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    input.burger-check:checked + label.burger-check > .burger-menu-line:nth-of-type(2) {
+        visibility: hidden;
+    }
+
+    input.burger-check:checked + label.burger-check > .burger-menu-line:nth-of-type(3) {
+        transform: rotate(-50deg);
+        transform-origin: left;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    li.nav-item {
+        display: none;
+    }
+
+    input.burger-check:checked + label.burger-check ~ ul.nav-list{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            align-self: center;
+        }
+    input.burger-check:checked + label.burger-check ~ul.nav-list > li.nav-item {
+            display: inline-flex;
+            align-self: center;
+            padding-left: 35vw;
+    }
+  
+}
