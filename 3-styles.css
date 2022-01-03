@@ -414,13 +414,15 @@ section[id="contact"] {
     color: var(--color-black);
     background-color: var(--color-white);
     align-items: center;
-    font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif; !important
+    font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif;
+    padding: 2em;
 
 }
 
 .contact-container {
     text-align: center;
     width: 100vw;
+    font-family: 'Source Sans Pro Semibold', Arial, Helvetica, sans-serif;
     padding: 5em;
 }
 
@@ -429,26 +431,18 @@ section[id="contact"] {
     padding-top: 2em 0;
 }
 
-form {
+
+.form {
+    font-family: 'Source Sans Pro Semibold', Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-lrg);
     display: flex;
     flex-direction: column;
-    padding: 1em 0; 
-    font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif;
-
+    align-self: center;
+    align-items: center;
+    padding: 2em;
+    position: relative;
 }
 
-.form-field {
-    font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 0;
-    font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif;
-
-}
 
 label {
    display: none;
@@ -456,8 +450,8 @@ label {
 
 input {
     border-style: hidden;
-    border-bottom: 1px solid var(--color-black);
-    width: 25vw;
+    border-bottom: 1.5px solid gray;
+    width: 25em;
     height: 5em;
     resize: none;
     color: var(--color-black);
@@ -467,12 +461,10 @@ input {
 
 textarea {
     border-style: hidden;
-    width: 25vw;
+    width: 25em;
     resize: none;
     height: 5em;
-    line-height: var(--line-height-base);
-    border-bottom: 1px solid var(--color-black);
-    /* padding: 1em 0; */
+    border-bottom: 1.5px solid gray;
     padding-top: 3em;
     font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif;
 
@@ -558,6 +550,10 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+
+    body {
+        height: 800vh;
+    }
     /* ---------------------------------------------------------HEADER AND NAV*/
     .header-nav-container{
         flex-direction: row-reverse;
@@ -671,7 +667,7 @@ textarea {
         flex-direction: column;
         width: 100vw;
         font-family: 'Sans Source Pro Regular', Arial, Helvetica, sans-serif;
-        height: 195vh;
+        /* height: 195vh; */
         position: relative;
         justify-content: space-between;
     }
@@ -744,4 +740,68 @@ textarea {
         align-items: center;
     }
 
+    /* ------------------------------------------------------------------------------CONTACT US */
+    section[id="contact"] {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        font-family: 'Sans Source Pro Regular', Arial, Helvetica, sans-serif;
+        /* height: 200vh; */
+        position: relative;
+        justify-content: center;
+        padding: 5em 0;
+        z-index: -1;
+    } 
+
+    .contact-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5em 0;
+        width: 100vw;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .form{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 1em;
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    input {
+        border-style: hidden;
+        border-bottom: 1.5px solid gray;
+        width: 30em;
+        height: 5em;
+        resize: none;
+        color: var(--color-black);
+        /* padding-top:3em; */
+        font-family: 'Source Sans Pro Semibold', Arial, Helvetica, sans-serif;
+    }
+    
+    textarea {
+        border-style: hidden;
+        width: 30em;
+        resize: none;
+        height: 5em;
+        border-bottom: 1.5px solid gray;
+        /* padding-top: 3em; */
+        font-family: 'Sans Source Pro Semibold', Arial, Helvetica, sans-serif;
+    
+        
+    }
+    
+    
+    ::placeholder {
+        font-family: 'Source Sans Pro Semibold', Arial, Helvetica, sans-serif;
+        font-size: var(--font-size-med);
+        color: var(--color-black);
+        
+    }
+    
 }
