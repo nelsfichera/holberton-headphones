@@ -22,6 +22,8 @@
     text-decoration: none;
 }
 
+/* -----------------------------------------------------------------------------FONT FACE */
+
 @font-face {
     font-family: 'Spin-Cycle-OT';
     src: url('./fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
@@ -42,6 +44,7 @@
     src:local('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
 }
 
+/* ------------------------------------------------------------------------MISC */
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -52,6 +55,8 @@ body {
     color: var(--color-white);
     background-color: var(--color-black);
 }
+
+/* ----------------------------------------------------------------------HEADER  */
 
 header {
     padding: .25em;
@@ -201,6 +206,8 @@ button {
 button:hover, button:active {
     opacity: 0.9;
 }
+
+/* ------------------------------------------------------------------MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
     .header-nav-container{
