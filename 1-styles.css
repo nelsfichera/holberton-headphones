@@ -271,6 +271,7 @@ section {
     padding: 1em 3em;
 }
 
+/* -----------------------------gallery */
 .what-we-do-gallery {
     display: flex;
     flex-direction: row;
