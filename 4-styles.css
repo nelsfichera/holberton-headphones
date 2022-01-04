@@ -506,6 +506,7 @@ nav .footer-nav {
      justify-content: space-evenly;
      width: 100vw;
      align-items: center;
+     padding: 2em;
 }
 
 ul.footer-nav-list {
